@@ -1,0 +1,144 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main role="main" id="content">
+    <div class="phase-banner-beta">
+
+        <div>
+            <p>
+                <strong class="phase-tag">BETA</strong>
+                <span>
+                    This is a new service – your
+                    <a href="https://www.surveymonkey.co.uk/r/DLL5F6K">feedback</a> will help us to improve it.
+                </span>
+            </p>
+        </div>
+    </div>
+    
+    <div class="grid-row margin-top">
+        <div class="column-two-thirds">
+            <span class="font-xsmall margin-right">
+                Welcome jim,
+            </span>
+            <span class="font-xsmall margin-right"> 
+                Casterbridge College
+            </span>
+            <span class="font-xsmall margin-right">
+                UKPRN:12345678
+            </span>
+        </div>
+        
+        <div class="column-third" style="text-align: right;"> <!--inline style needs to be changed-->
+            <span>
+                <a class="font-xsmall" href="/support">Support</a>
+            </span>
+            
+            <span>
+                <a class="font-xsmall" href="/settings">User roles</a>
+            </span>
+            
+            <span>
+                <a class="font-xsmall" href="/">Sign out</a>
+            </span>
+        </div>
+    </div>
+    
+<!--    <div class="breadcrumbs">
+      <ol role="breadcrumbs">
+        <li><a href="/index">Home</a></li>
+        <li><a href="/documents">Your contract documents</a></li>
+      </ol>
+    </div>-->
+
+<div class="grid-row spacing-top">
+    <div class="column-two-thirds">
+        <h1 class="heading-xlarge">Review contract</h1>
+    </div>
+</div>
+
+
+<div class="grid-row">    
+<div class="column-two-thirds">
+<div class="bold-medium">Step 1 of 2</div>
+<br>
+        <p>You are about to agree and sign your contract.</p>
+
+<section class="attachment">
+    <div class="attachment-thumb">
+        <a class="thumbnail" href="/">
+            <img alt="" src="/Content/sfa/Images/thumbnail_attachment_contract_pdf.png">
+        </a>
+    </div>
+    <div>
+        
+        <h2 class="attachment-details">
+                <a href="/">ESF SSW Retraining for Employment contract for Cornwall and the Isles of Scilly LEP version 1</a>
+        </h2>
+        
+        <p class="metadata">
+            <span><abbr title="Portable Document Format">PDF</abbr></span>, <span>82KB</span>
+        </p>
+        
+        <div class="accessibility-warning">
+            
+            <h2>
+                This file may not be suitable for users of assistive technology.
+                <br>
+                <span class="toggler" id="togglehelp">Request a different format.</span>
+            </h2>
+            
+            <p class="visuallyhidden" id="help_block">
+                <span class="arrow"></span>
+                If you use assistive technology and need a version of this document
+                in a more accessible format, please email
+                <a href="/">info@sfa.bis.gov.uk</a>.
+                Please tell us what format you need. It will help us if you say what assistive technology you use.
+            </p>
+        
+        </div>
+    
+    </div>
+</section>
+    
+<div class="call-to-action">
+    <div>ESF SSW Retraining for Employment contract for Cornwall and the Isles of Scilly LEP version 1</div>
+    <div class="padding-top">Sign by: 4:00pm 05 May 2016</div>
+</div>
+<br>
+
+    
+    <p class="bold-small">
+        The <abbr title="Portable Document Format">PDF</abbr> contains:
+    </p>
+    <ul class="list-bullet">
+        <li>a covering letter from the <abbr title="Skills Funding Agency">SFA</abbr></li>
+        <li>the contract and the period of time it is valid</li>
+        <li>information on the funding amounts</li>
+        <li>the terms and conditions that apply</li>
+        <li>appendices</li>
+    </ul>
+
+    <br>
+    
+    <div>
+        <p><a class="button" href="/step2">Continue to sign</a></p>
+        <p><a class="link" href="/documents">Cancel</a></p> <!--needs looking at-->
+        
+    </div>
+    
+    <br>
+    
+    <p><a href="#">Raise a query</a>  about this contract.</p>
+    
+    </div>
+  </div>
+
+</main>
+
+
+{% endblock %}

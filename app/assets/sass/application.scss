@@ -1,0 +1,222 @@
+// Import GOV.UK elements, this will import the frontend toolkit and some base styles.
+// Take a look in _govuk-elements.scss to see which files are imported.
+@import 'govuk-elements';
+
+// Take a look at patterns.scss to see which files are imported.
+@import 'patterns';
+
+// If you need to create a page as part of your journey, but without GOV.UK branding
+// See localhost:3000/examples/unbranded/
+.unbranded {
+  background: $white;
+  // Use the universal selector and !important to *ALWAYS OVERRIDE* GDS Transport
+  * {
+    font-family: Arial !important;
+  }
+  // Remove GOV.UK footer styles
+  #footer {
+    border: 0;
+    background: $white;
+  }
+}
+
+// Related items
+// (These styles will be moved to GOV.UK elements, duplicating here for now.)
+.govuk-related-items {
+  margin-top: $gutter;
+  border-top: 10px solid $govuk-blue;
+  padding-top: 5px;
+
+  .heading-medium {
+    margin-top: 0.3em;
+    margin-bottom: 0.5em
+  }
+
+  li {
+    margin-bottom: 10px;
+    list-style-type: none;
+  }
+}
+
+// Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+
+.margin-top {
+    margin-top: 10px;
+}
+
+.margin-right {
+    margin-right: 10px;
+}
+
+/*this part is for aside section*/
+.related-container {
+    padding-top: 0px;
+    padding-right: 15px;
+    padding-bottom: 0px;
+    padding-left: 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+
+@media (min-width: 641px) {
+    .related-container {
+        float: left;
+        width: 33.33333%;
+        margin-top: 30px;
+    }
+}
+
+.related {
+    border-top: 10px solid #005ea5;
+    border-top-width: 10px;
+    border-top-style: solid;
+    border-top-color: rgb(0, 94, 165);
+    padding-top: 5px;
+}
+
+@media (min-width: 641px) {
+    
+    .related h2 {
+        font-size: 24px;
+        line-height: 1.25;
+    }
+}
+
+.related h2 {
+    font-family: "nta", Arial, sans-serif;
+    /*font-size: 18px;
+    line-height: 1.2;
+    font-weight: 400;*/
+    text-transform: none;
+    font-weight: 600;
+    color: #0b0c0c;
+    margin-top: 0.3em;
+    margin-bottom: 0.5em;
+    position: relative;
+}
+
+.related nav {
+    margin-bottom: 1.25em;
+}
+
+.related ul {
+    list-style: none;
+    line-height: 2;
+    font-size: 14px;
+}
+
+@media (min-width: 641px) {
+    .related ul {
+        font-size: 16px;
+        line-height: 2;
+    }
+}
+
+
+.related li a {
+    background-position: 0 -287px;
+    background-repeat: no-repeat;
+    display: block;
+    /*line-height: 1.25;*/
+    orphans: 2;
+} /*end of aside section*/
+
+
+/*New filter menu style*/
+@media (min-width: 641px) {
+    .vertical-padding-medium-top {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+.impact-link .impact-link-figure {
+    font-size: 40px;
+    display: inline-block;
+    vertical-align: text-top;
+}
+
+.impact-link .impact-link-label {
+    display: inline-block;
+    padding-left: 0.5em;
+    white-space: normal;
+    width: 72%;
+    vertical-align: text-top;
+}
+
+.impact-link {
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 1.1;
+    text-decoration: none;
+    display: block;
+    white-space: nowrap;
+}
+
+@media (min-width: 769px) {
+    .impact-link {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 769px) {
+    .impact-link .impact-link-figure {
+        font-size: 60px;
+        line-height: 0.9;
+    }
+}/*End of filter menu style*/
+
+
+.call-to-action {
+    margin: 30px 0;
+    background: #dee0e2 none no-repeat 98% 20px;
+    padding: 10px 60px 10px 15px;
+    position: relative;
+}
+
+.padding-top {
+    padding-top: 15px;
+}
+
+.accessibility-warning h2 {
+    font-size: 14px;
+    line-height: 1.42857;
+}
+
+.attachment-details {
+    font-size: 20px;
+}
+
+@media (min-width: 641px) {
+    .attachment-details {
+        font-size: 27px;
+    }
+}
+    
+
+.govuk-box-highlight {
+    /*margin: 1em 0 1em 0;*/
+    padding: 2em 1em 1em 1em;
+}
+
+.x-xsmall {
+    font-size: 14px;
+}
+
+.column-third span a.font-xsmall {
+    margin-left: 10px;
+}
+
+
+
+/* TABS */
+
+.tab {
+            display:none;
+        }
+
+.tab.active {
+            display:table-row;
+        }

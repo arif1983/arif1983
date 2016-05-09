@@ -1,0 +1,116 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+
+{% block content %}
+
+<main role="main" id="content">
+    <div class="phase-banner-beta">
+
+        <div>
+            <p>
+                <strong class="phase-tag">BETA</strong>
+                <span>
+                    This is a new service – your
+                    <a href="https://www.surveymonkey.co.uk/r/DLL5F6K">feedback</a> will help us to improve it.
+                </span>
+            </p>
+        </div>
+    </div>
+    
+    <div class="grid-row margin-top">
+        <div class="column-two-thirds">
+            <span class="font-xsmall margin-right">
+                Welcome jim,
+            </span>
+            <span class="font-xsmall margin-right"> 
+                Casterbridge College
+            </span>
+            <span class="font-xsmall margin-right">
+                UKPRN:12345678
+            </span>
+        </div>
+        
+        <div class="column-third" style="text-align: right;"> <!--inline style needs to be changed-->
+            <span>
+                <a class="font-xsmall" href="/support">Support</a>
+            </span>
+            
+            <span>
+                <a class="font-xsmall" href="/settings">User roles</a>
+            </span>
+            
+            <span>
+                <a class="font-xsmall" href="/">Sign out</a>
+            </span>
+        </div>
+    </div>
+    
+<!--    <div class="breadcrumbs">
+      <ol role="breadcrumbs">
+        <li><a href="/index">Home</a></li>
+        <li><a href="/documents">Your contract documents</a></li>
+      </ol>
+    </div>-->
+
+<div class="grid-row spacing-top">
+    <div class="column-two-thirds">
+        <h1 class="heading-xlarge">Settings</h1>
+    </div>
+</div>
+
+
+<div class="grid-row">    
+<div class="column-two-thirds">
+<h3 class="bold-medium">Permissions</h3>
+
+    
+    
+        <p>You can:</p>
+        <ul class="list-bullet">
+            <li>sign contracts</li>
+            <li>read, print and download information</li>
+            <li> submit and save information</li>
+            <li>receive email alerts</li>
+        </ul>
+        <br>
+        <p>You cannot:</p>
+        <ul class="list-bullet">
+            <li>add and remove users</li>
+            <li>set and change a users' permissions</li>
+            <li>display your contact details in the service for others to see</li>
+        </ul>
+        <br>
+        <p>Contact your organisation's 'provider support user' if you want to add these permissions</p>
+  
+        
+        <h3 class="bold-small">Account settings</h3>
+        
+<p>If you want to:</p>
+        <ul class="list-bullet">
+            <li>update your contact information</li>
+            <li>change your password</li>
+        </ul>
+        <p>you need to use our <a href="/">security service</a> (Identity Authentication Management Service - Idams)</p>
+        <br>
+                
+        
+        <h3 class="bold-small">Manage users</h3>
+        
+        <p>If you want to:</p>
+        <ul class="list-bullet">
+            <li>manage your existing users</li>
+            <li>grant new users access</li>
+            <li>remove access rights</li>
+        </ul>
+    <p>You need to use <a href="/">Idams</a></p>
+    
+</div>
+     </div>
+
+</main>
+
+
+{% endblock %}
